@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+
+  /* primary text colors */
+
+  --paleViolet : hsl(276, 100%, 81%);
+  --moderateViolet :  hsl(276, 55%, 52%);
+  --desaturatedViolet : hsl(271, 15%, 43%);
+  --greyishBlue : hsl(206, 6%, 79%);
+  --veryDarkDesaturatedViolet: hsl(271, 36%, 24%);
+  --darkGreyishViolet : hsl(270, 7%, 64%);
+
+/* gradients background colors */
+  --lightMagenta : hsl(293, 100%, 63%);
+  --lightViolet : hsl(264, 100%, 61%);
+
+  /* secondary colors */
+  --white : hsl(0, 0%, 100%);
+  --lightGrayishViolet: hsl(270, 20%, 96%);
+  --veryDarkDesaturatedViolet: hsl(271, 36%, 24%);
+  --veryLightMagenta:  hsl(289, 100%, 72%);
+
+  
+}
+
+/* background  */
+:root::before {
+  content: " ";
+  position: absolute;
+  z-index: -90 ;
+  /* top: -20; */
+  left: -16rem;
+  width: 470px;
+  height: 700px;
+  border-radius: 0 0 15rem 15rem;
+  background-image: linear-gradient(to bottom, var(--lightMagenta), var(--lightViolet));
+}
+
+
+:root::after {
+  content: " ";
+  position: absolute;
+  z-index: -90 ;
+  top: 550px;
+  right: -16rem;
+  width: 450px;
+  height: 650px;
+  border-radius: 0 0 15rem 15rem;
+  background-color:var(--lightGrayishViolet);
+  transform: rotateZ(180deg);
+  
+}
+
+
+body {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  box-sizing: border-box;
+  position: relative;
+  overflow-x: hidden;
+}
+
+
+main {
+  display: grid;
+  place-items: center;
+  min-height: 80vh;
+  margin:50px auto 0px;
+}
+
+/* the main container */
+
+.contain {
+  display: grid;
+  grid: 2fr, 1fr / 1fr;
+  place-items: center; 
+}
+
+
+/* 
+-------------------------------------------------
+MOBILE MOCKUP
+-------------------------------------------------
+
+ */
+
+.mobile_interface {
+  border: 15px solid var(--white);
+  border-radius: 50px;
+  margin: 20px;
+  position: relative;
+  width: 290px;
+  font-size: 0.6rem;
+  box-shadow: 0 0 40px var(--greyishBlue);
+  background-color: var(--lightGrayishViolet);
+}
+
+.mobile_interface::after{
+  content: " ";
+  position: absolute;
+  background-color: var(--white);
+  width: 180px;
+  height: 25px;
+  z-index: 10;
+  top: 0px;
+  left: 58px;
+  border-radius: 0 0 25px 25px; 
+}
+
+
+/* 
+---------- chat header /profile and status
+ */
+
+.chat_header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 40px 10px 10px;
+  background-image: linear-gradient(to right, var(--lightViolet), var(--moderateViolet), var(--lightMagenta));
+  border-radius: 38px 38px 10px 10px;
+  position: relative;
+  z-index: 10;
+  box-shadow: 0 2px 2px var(--paleViolet);
+}
+
+.profile-container {
+  display: flex;
+  align-items: center;
+  flex: 1 1 50%;
+}
+
+.profile_img > img {
+  border-radius: 50%;
+  border: 2px solid var(--white);
+  width: 2.5em;
+  margin-right: 10px;
+}
+
+.profile {
+  line-height: 1.5;
+}
+.profile_name {
+  font-weight: 700;
+  color: var(--white);
+  font-size: 12px;
+}
+
+.profile_status {
+  color: var(--paleViolet);
+}
+
+
+/* 
+------------  chat interface/texts and images
+ */
+
+.chat {
+  background-color: var(--lightGrayishViolet);
+  padding: 20px 10px 60px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border-radius: 0 0 40px 40px;
+}
+
+/* text containing images */
+.text-images {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1em;
+  align-self: flex-end;
+}
+
+/* images in the text */
+.text-images>img {
+  border-radius: 10px;
+  margin-right: 10px;
+  width: 6em;
+}
+
+
+/* texts box */
+.text-box {
+  padding: 1em;
+  background-color: var(--white);
+  margin-bottom: 1em;
+  max-width: 14em;
+  line-height: 1.5;
+}
+
+/* text box of the left */
+.text-box.left {
+  border-radius: 12px 12px 12px 2px;
+  align-self: flex-start;
+  background-color: var(--paleViolet);
+}
+
+.text-box.right {
+  border-radius: 12px 12px 2px 12px;
+  align-self: flex-end;
+  box-shadow: 0 3px 8px hsla(210, 6%, 79%, 0.445);
+}
+
+/* for the radio inputs */
+.radio-group {
+  display: flex;
+  flex-direction: row;
+  background-image: linear-gradient(to right, var(--lightMagenta), var(--moderateViolet));
+  width: 180px;
+  margin-bottom: 1em;
+  padding: 1em;
+  border-radius: 12px 12px 12px 2px;
+}
+
+.radio {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+input[type="radio"] {
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  border: 0.5px solid var(--veryLightMagenta);
+  /* flex: 0 1 auto; */
+  margin-right: 10px;
+}
+
+label {
+  /* flex: 1 2 50%; */
+  width: 110px;
+  color: var(--white);
+  font-weight: 500;
+  /* font-family: "Rubik"; */
+}
+
+.input-price {
+  /* flex: 1 1 10%; */
+  color: var(--white);
+  font-weight: 700;
+  font-size: 1.5em;
+  /* flex: 0 1 10px; */
+}
+
+
+/* text color */
+.left-text {
+  color: var(--moderateViolet);
+}
+
+.right-text {
+  color: var(--desaturatedViolet);
+}
+
+/* 
+--------------- typing area -----------------
+ */
+
+/* text input to send section */
+
+
+.text_input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--white);
+  border-radius: 20px;
+  position: absolute;
+  bottom: 15px;
+  left: 10px;
+  padding: 5px;
+  width: 260px;
+  box-shadow: 0 3px 8px hsla(210, 6%, 79%, 0.445);
+}
+
+.text_input input[type="text"] {
+  font-family: "Rubik";
+  color: var(--greyishBlue);
+}
+
+.typing_text {
+  color: var(--greyishBlue);
+  margin-left: 15px;
+  border: none;
+}
+
+/* send icon */
+
+.send_icon {
+  background-color: var(--veryDarkDesaturatedViolet);
+  border-radius: 50%;
+  border: none;
+  padding: 2px 3px;
+}
+
+/* ----------------------------------------
+----------- END OF MOBILE MOCKUP ---------
+------------------------------------------ */
+
+
+
+/* ----------------------------------------
+--------------- PROMO SECTION --------------
+------------------------------------------- */
+.promo {
+  /* width: 80%; */
+  text-align: center;
+  margin: 50px auto;
+}
+
+.promo_heading {
+  color: var(--veryDarkDesaturatedViolet);
+  font-weight: 500;
+  font-size: 2.5em;
+}
+
+.promo_text {
+  color: var(--darkGreyishViolet);
+  line-height: 1.8;
+  padding: 20px 30px;
+}
+
+
+
+/* ----------------------------------------
+------------- END OF PROMO SECTION --------------
+------------------------------------------- */
+
+
+/* 
+------------ * footer * -----------
+ */
+
+footer {
+  margin: 40px auto;
+}
+
+footer .attribution { 
+  font-size: 11px; 
+  text-align: center; 
+}
+
+footer .attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
+
+/* 
+-------------- MEDIA QUERIES ---------------
+
+
+-------------- FOR LARGE SCREENS -------------
+ */
+ 
+@media screen and (min-width: 1000px) {
+
+:root::before {
+    width: 500px;
+    height: 850px;
+    left: -10rem;
+  }
+
+:root::after {
+    top: 100px;
+    right: -14rem;
+    height: 800px;
+    width: 450px;
+  }
+
+ .contain {
+    grid: 1fr / repeat(2, 1fr);
+    width: 80vw;
+    padding: 50px;
+  }
+  .mobile {
+  /* align-self: auto; */
+  padding-left: 50px;
+}
+  .promo {
+    text-align: left;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .promo_text {
+    padding: 20px 0;
+  }
+
+}

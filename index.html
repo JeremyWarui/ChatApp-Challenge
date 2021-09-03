@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | ChatApp Challenge</title>
+
+
+
+  <!-- mystyles sheet 👍 -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- google material icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+
+  <main>
+    <div class="contain">
+
+      <div class="mobile">
+        <!-- mobile interface class will draw the frame of the mobile -->
+        <div class="mobile_interface">
+
+          <!-- chat header -->
+          <div class="chat_header">
+
+            <!-- back icon -->
+            <div class="back_icon">
+              <img src="icons/chevron_left_white_24dp.svg" alt="back button">
+            </div>
+
+            <!-- profile div -->
+            <div class="profile-container">
+
+              <!-- profile image -->
+              <div class="profile_img">
+                <img src="images/avatar.jpg" alt="avatar">
+              </div>
+              <!-- profile name/info -->
+              <div class="profile">
+                <h1 class="profile_name">Samuel Green</h1>
+                <p class="profile_status">Available to Walk</p>
+              </div>
+
+            </div>
+
+
+            <!-- the menu icon -->
+
+            <div class="menu">
+              <img src="icons/more_vert_white_24dp.svg" alt="more button">
+            </div>
+
+          </div>
+          <!-- end of chat header -->
+          <div class="chat">
+            <!-- start of chat -->
+            <!-- text1 -->
+            <div class="text-box left">
+              <p class="left-text">
+                That sounds great.I’d be happy to discuss more
+              </p>
+            </div>
+
+            <!-- text2 -->
+            <div class="text-box left">
+              <p class="left-text">
+                Could you send over some pictures of your dog, please?
+              </p>
+
+            </div>
+
+            <!-- text3 -->
+            <div class="text-images">
+              <img src="images/dog-image-1.jpg" alt="image of a dog">
+              <img src="images/dog-image-2.jpg" alt="image of a dog">
+              <img src="images/dog-image-3.jpg" alt="image of a dog">
+            </div>
+
+            <!-- text4 -->
+            <div class="text-box right">
+              <p class="right-text">
+                Here are a few pictures. She’s a happy girl!
+              </p>
+            </div>
+
+            <!-- text5 -->
+            <div class="text-box right">
+              <p class="right-text">
+                Can you make it?
+              </p>
+            </div>
+
+            <!-- text6 -->
+            <div class="text-box left">
+              <p class="left-text">
+                She looks so happy! The time we discussed works. How long shall I take her out for?
+              </p>
+            </div>
+
+            <!-- text7 -->
+            <div class="radio-group">
+              <div class="radio">
+                <input type="radio" id="radio">
+                <label for="radio">30 minute walk </label>
+                <p class="input-price">$29</p>
+              </div>
+
+            </div>
+            <!-- text8 -->
+            <div class="radio-group">
+              <div class="radio">
+                <input type="radio" id="radio">
+                <label for="radio">1 hour walk </label>
+                <p class="input-price">$49</p>
+              </div>
+
+
+            </div>
+
+          </div>
+
+          <!-- text input section -->
+          <div class="text_input">
+            <!-- typing text -->
+            <div>
+              <input class="typing_text" type="text" placeholder="Type a message… ">
+            </div>
+            <div>
+              <button type="submit" class="send_icon">
+                <span>
+                  <img src="icons/chevron_right_white_24dp.svg" alt="send button">
+                </span>
+              </button>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+
+      <div class="promo">
+        <h2 class="promo_heading">Simple Booking</h2>
+        <p class="promo_text">
+          Stay in touch with our dog walkers through the chat interface. This makes it easy to discuss arrangements and
+          make bookings.
+          Once the walk has been completed you can rate your walker and book again all through the chat.
+        </p>
+      </div>
+    </div>
+  </main>
+
+
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
+      <a href="https://www.frontendmentor.io/profile/JeremyWarui">Jeremy Warui</a>.
+    </div>
+  </footer>
+</body>
+
+</html>
