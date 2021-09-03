@@ -34,7 +34,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [View my Solution](https://github.com/JeremyWarui/ChatApp-Challenge)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
