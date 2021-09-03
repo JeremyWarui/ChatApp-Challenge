@@ -35,7 +35,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [View my Solution](https://github.com/JeremyWarui/ChatApp-Challenge)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [My Live Solution](https://chat-app-challenge-kappa.vercel.app/)
 
 ## My process
 
